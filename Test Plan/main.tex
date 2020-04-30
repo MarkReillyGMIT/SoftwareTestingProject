@@ -72,11 +72,45 @@ The objective of our test plan is to find and report as many bugs as possible to
     \item List the deliverable elements of the test activities.
 \end{enumerate}
 \subsection{Tasks}
-
+\begin{enumerate}
+    \item Identify what particular tests will be used to test each module.
+    \item Identify the expected results for each test.
+    \item Perform the tests.    
+    \item Document the test data, test cases and test configuration used during the testing process.
+    \item Successful unit testing is required before it is eligible for system and integration testing.
+    \item Unsuccessful testing will require a Bug Report to be generated.
+    \item Test documents and reports should be submitted when all is complete.
+\end{enumerate}
 
 \newpage
 
 \section{Scope}
+\subsubsection{General}
+The main components of the game that need to be tested are as follows:
+\begin{enumerate}
+    \item Main Menu:
+    
+    The Main Menu will have three options on start-up: ‘Play’, ‘Settings’, and ‘Exit Game’.
+    Selecting ‘Play’ will take the player into the game and the player will begin at Level 1.
+    If a save system is able to be implemented, the player will begin at their last saved
+    point. ‘Settings’ will allow the player to edit game settings, such as sound level and
+    music level. ‘Exit Game’ will quit the application’.
+    \item Player Movement:
+    
+    Player Movement will be tested to see if the player is able to move the character, also to see if the player is confined to the screen and not able to go out of view and disappear.The players jump, crouch and attack abilities will be tested under this section.
+    \item Player Health Counter:
+    
+    The players health counter will be tested to see if the player loses a life after being hit by an enemy. When the player collects an extra health, the health counter should go up by one.If the player loses all of its lives, it should be destroyed.
+    \item Enemy Health Counter:
+    
+    The enemies health counter will be tested to see if the enemy loses a life after being hit by the players bullet.When the enemy loses all its lives, the enemy should be destroyed. If the enemy is the boss enemy at the end of each level and it is destroyed , the player should be brought to the next level.
+    \item In-Game Menu:
+    
+    The game will include a number of options when the game is paused, similar to those
+    available on start up. The player will be able to resume the game, access settings,
+    restart the level, and exit the game. All the in-game menu options will be tested to see if the selected options does its intended function.
+    
+\end{enumerate}
 
 \newpage
 
